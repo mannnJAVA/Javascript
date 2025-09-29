@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROCK PAPPER SCISSORS</title>
+    <link rel="stylesheet" href="game.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>🪨Rock 📄Paper ✂️Scissors</h1>
+    </header>
+
+    <main class="mainBlock">
+      <section>
+        <button class="pMove rock-button">🪨</button>
+
+        <button class="pMove paper-button">📄</button>
+
+        <button class="pMove scissor-button">✂️</button>
+      </section>
+
+      <section class="stats">
+        <p class="js-result"></p>
+
+        <p class="moves"></p>
+
+        <p class="js-score"></p>
+      </section>
+
+      <button class="reset-btn">Reset Score</button>
+
+      <div class="popUp" id="popUp">
+        <div id="popUp-content" class="popUp-content">
+          <p>Are you sure ?</p>
+
+          <button id="yesBtn" class="yes-btn popUp-btn">Yes</button>
+
+          <button id="noBtn" class="no-btn popUp-btn">No</button>
+        </div>
+      </div>
+
+      <button class="auto-play">Auto play</button>
+
+      <button class="stop-auto-play">Stop Auto play</button>
+    </main>
+
+    <footer>
+      <p>Thank you for playing</p>
+    </footer>
+
+    <script src="game.js"></script>
+  </body>
+</html>

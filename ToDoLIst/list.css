@@ -1,0 +1,110 @@
+ body {
+    background: linear-gradient(135deg,#faf3e0,#e0d4b7);
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin:0;
+    padding:0;
+  }
+
+  .container {
+    max-width:700px;
+    margin:60px auto;
+    background:#fffdf7;
+    border-radius:16px;
+    box-shadow:0 6px 20px rgba(0,0,0,.2);
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+  }
+
+  h1 {
+    margin:0;
+    font-size:2rem;
+    text-align:center;
+    color:#333;
+    letter-spacing:1px;
+  }
+
+  .adding {
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    justify-content:center;
+  }
+
+  .list,.dat {
+    border:1px solid #bbb;
+    border-radius:8px;
+    padding:10px;
+    font-size:1rem;
+  }
+
+  .list {
+    flex:1;
+    min-width:180px;
+  }
+
+  .dat {
+    width:150px;
+  }
+
+  .addd {
+    background:#4caf50;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    padding:10px 20px;
+    font-size:1rem;
+    cursor:pointer;
+    transition:background .15s;
+  }
+  .addd:hover { background:#45a047; }
+
+  .display-list {
+    max-height:400px;
+    overflow-y:auto;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+
+  .task-row {
+    background:#fefefe;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:12px 16px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+  }
+
+  .task-name {
+    flex:2;
+    word-break:break-word;
+  }
+
+  .task-date {
+    flex:1;
+    text-align:center;
+    color:#555;
+  }
+
+  .task-actions {
+    display:flex;
+    gap:8px;
+  }
+
+  .task-row button {
+    border:none;
+    border-radius:6px;
+    padding:6px 12px;
+    font-size:.9rem;
+    cursor:pointer;
+    transition:opacity .15s;
+  }
+
+  .delete-btn { background:#e74c3c; color:#fff; }
+  .delete-btn:hover { opacity:.8; }
+  .edit-btn   { background:#ffb74d; color:#222; }
+  .edit-btn:hover   { opacity:.8; }
